@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online exercise</title>
+    <link rel="icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="logo"></div>
+        <nav class="nav">
+            <a class="nav-link" href="#">Мероприятия</a>
+            <a class="nav-link" href="#">Расписание</a>
+            <a class="nav-link" href="#">О компании</a>
+        </nav>      
+        <a class="e-mail-header" href="info@freefit.com">info@freefit.com</a>
+    </header>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__text">
+                    <h1 class="hero__title">Онлайн тренировки любой сложности</h1>
+                    <p class="hero__subtitle"><span class="hero__number">&gt;&nbsp;15</span> <span>тренировок</span></p>
+                    <p class="hero__desc">в области спортивной физиологии и нутрициологии</p>
+                    <a class="hero_button" href="">Узнать подробнее</a>
+                </div>
+                <div class="hero__bg"></div>
+                <img  class="hero__img" src="./images/image@2x.png" alt="">
+                <a href="" class="arrow"></a>
+            </div>
+        </div>
+    </section>    
+    <main>
+        <section class="schedule">
+            <div class="container">
+                <div class="shedule__content">
+                    <div class="shedule__header">
+                        <h2 class="shedule__title">Расписание тренировок</h2>
+                        <p class="shedule__dates">22 - 28 июня</p>
+                    </div>
+                    <div class="shedule__box">
+                        <div class="shedule__item">
+                            <p class="shedule__date">24 июня, 10:00</p>                                                    
+                            <div class="shedule__thumb">
+                                <img src="./images/body.svg" alt="">
+                            </div> 
+                            <h3 class="shedule__name">Функциональный тренинг</h3>
+                        </div>
+                        <div class="shedule__item">
+                            <p class="shedule__date">24 июня, 10:00</p>                                                      
+                            <div class="shedule__thumb">
+                                <img src="./images/bottle.svg" alt="">
+                            </div>  
+                            <h3 class="shedule__name">Body sculpt</h3>
+                        </div>
+                        <div class="shedule__item">
+                            <p class="shedule__date">26 июня, 11:00</p>                                                       
+                            <div class="shedule__thumb">
+                                <img src="./images/dumbbell.svg" alt="">
+                            </div> 
+                            <h3 class="shedule__name">L.A.B.</h3>
+                        </div>
+                        <div class="shedule__item">
+                            <p class="shedule__date">23 июня, 10:00</p>                                                        
+                            <div class="shedule__thumb">
+                                <img src="./images/jump.svg" alt="">
+                            </div>
+                            <h3 class="shedule__name">Силовой микс</h3>
+                        </div>
+                        <div class="shedule__item">
+                            <p class="shedule__date">25 июня, 11:00</p>                           
+                            <div class="shedule__thumb">
+                                <img src="./images/heart.svg" alt="">
+                            </div> 
+                            <h3 class="shedule__name">Дыхательные практики</h3>
+                        </div>
+                        <div class="shedule__item">                            
+                            <p class="shedule__date">27 июня, 10:00</p>                          
+                            <div class="shedule__thumb">
+                                <img src="./images/weight.svg" alt="">
+                            </div>  
+                            <h3 class="shedule__name">Комплексная разминка</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscription">
+            <div class="subscription__content">
+                <h3 class="subscription_title">Подпишитесь на рассылку</h3>                
+                <form action="" class="form">
+                    <div>
+                        <input type="email" placeholder="Ваш e-mail">
+                        <div class="agreement">
+                            <input type="checkbox" id="01" class="checkbox">
+                            <label class="sub_label" for="01">Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
+                        </div>
+                    </div>
+                    <button class="button_submit" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__content">
+                <div class="about__container">
+                    <div class="about__body">                        
+                            <h3 class="about__title">О компании</h3>
+                            <p class="about__text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+                            <button class="sign_up">Записаться</button>
+                    </div>
+                    <div class="img_about">
+                            <img class="img_about1" src="./images/trainer@2x.png" alt="">
+                    </div>                    
+                </div>                                
+            </div>
+        </section>
+        <section class="advantages">            
+            <div class="about__advantages">
+                <div class="advantages__container">
+                    <div class="item__advantages">
+                        <h4 class="advantages_title">Экономия времени</h4>
+                        <p class="advantages_description">Не нужно тратить время на дорогу</p>
+                    </div>                        
+                    <div class="item__advantages">
+                        <h4 class="advantages_title">Индивидуальный подход</h4>
+                        <p class="advantages_description">Внимание тренера пренадлежит только вам</p>
+                    </div>                        
+                    <div class="item__advantages">
+                        <h4 class="advantages_title">Экономия денег</h4>
+                        <p class="advantages_description">Средняя цена одной тренировки - 700₽</p>
+                    </div>                        
+                   <div class="item__advantages">
+                        <h4 class="advantages_title">Опытный персонал</h4>
+                        <p class="advantages_description">Стаж работы у наших тренеров от 5 лет</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__logo">
+                        <a href=""></a>
+                    </div>
+                        <nav class="footer__nav">
+                            <a href="">Мероприятия</a>
+                            <a href="">Расписание</a>
+                            <a href="">О компании</a>
+                        </nav>                               
+                        <a class="e-mail-header" href="info@freefit.com">info@freefit.com</a>
+                    </div>                
+                <div class="footer__license">
+                    <div class="license_item">
+                        <p class="license_p">© 2022, Все права защищены</p>
+                        <p class="license_p">Сделано в рамках курса учебной платформы <a class="license_a" href="#">Frontend Blok</a></p>
+                    </div>
+                </div>
+    
+                </div>
+            </div>    
+    </footer>    
+</body>
+</html>
