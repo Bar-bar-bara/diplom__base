@@ -522,29 +522,20 @@ input {
 } 
 
 
-.about__advantages {
-    display: flex;    
-    max-width: 1141px;
-	padding: 0px 15px;
-	margin: 0px auto;   
-}
-
-.advantages__container {
+.advantages__wrapper {
     display: flex;
-    flex-direction: row;
     gap: 67px;
     margin-bottom: 150px;
 }
 
-.advantages_title {
+.advantages__title {
     font-size: 18px;
     font-weight: 700;
     line-height: 125%;
     color: var(--accent-dark);
-
 }
 
-.advantages_description {
+.advantages__description {
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
@@ -588,6 +579,27 @@ input {
 
 .footer__license {
     padding-top: 13px;
+}
+
+.e-mail-footer {
+    position: relative;
+    align-items: center;
+    color: var(--accent-dark);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%; 
+    z-index: 1;  
+}
+.e-mail-footer::before {
+    position: absolute;
+    content: '';
+    display: block;    
+    width: 25px;
+    height: 25px;
+    background-color: var(--accent-light);
+    border-radius: 100%;
+    left: -12px;     
+    z-index: -1; 
 }
 
 
@@ -761,33 +773,8 @@ input {
     }
 
     .about__wrapper {
-        margin-bottom: -3px;
+        margin-bottom: 23px;
     }
-    
-
-
-
-   /* .header {
-        gap: 0;
-    }
-    .header-item {
-        flex-basis: 28.4%;
-    }
-    .header-logo {
-        width: 78px;
-        height: 24px;
-    }
-    .hero__container {
-        margin-left: 0px;
-    }
-    .hero__image {
-        flex: 0 0 calc(50vw - (0.4 - 0.5) * 1140px);
-        transform: translate(-82%, 0px);
-    }
-    .hero__image img {
-        max-width: 81%;
-        margin-top: 100px;
-    }*/
 
    .shedule__box {        
         grid-template-columns: repeat(2, 1fr);
@@ -812,6 +799,39 @@ input {
     .subscription__content {
         margin-bottom: 97px;
     }
+
+    .advantages__wrapper {
+        flex-wrap: wrap;
+        gap: 37px 98px;
+    }
+
+    .item__advantages {
+        width: 35%;
+    }
+
+    .advantages__title {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .advantages__description {
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .footer__nav {
+        display: none;
+    }
+    .e-mail-footer {
+        display: none;
+    }
+
+    .license_item>p:first-child  {
+        display: none;
+    }
+
+
 
 }
 
