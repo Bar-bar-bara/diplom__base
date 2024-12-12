@@ -147,29 +147,39 @@
             </div>
         </section>
     </main>
-<footer class="footer">
-            <div class="footer__container">
-                <div class="footer__wrapper">
-                    <div class="footer__logo">
-                        <a href=""></a>
+        <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__wrapper">
+                        <div class="footer__logo">
+                            <a href=""></a>
+                        </div>
+                            <nav class="footer__nav">
+                                <a href="">Мероприятия</a>
+                                <a href="">Расписание</a>
+                                <a href="">О компании</a>
+                            </nav>                               
+                            <a class="e-mail-footer" href="info@freefit.com">info@freefit.com</a>
+                        </div>                
+                    <div class="footer__license">
+                        <div class="license_item">
+                            <p class="license_p">© 2022, Все права защищены</p>
+                            <p class="license_p">Сделано в рамках курса учебной платформы <a class="license_a" href="#">Frontend Blok</a></p>
+                        </div>
                     </div>
-                        <nav class="footer__nav">
-                            <a href="">Мероприятия</a>
-                            <a href="">Расписание</a>
-                            <a href="">О компании</a>
-                        </nav>                               
-                        <a class="e-mail-footer" href="info@freefit.com">info@freefit.com</a>
-                    </div>                
-                <div class="footer__license">
-                    <div class="license_item">
-                        <p class="license_p">© 2022, Все права защищены</p>
-                        <p class="license_p">Сделано в рамках курса учебной платформы <a class="license_a" href="#">Frontend Blok</a></p>
-                    </div>
-                </div>
-    
-            </div>                
-    </footer>
-    
-   
+        
+                </div>                
+        </footer>
+        <div class="modal" id="modal">
+            <div class="logo__footer"></div>
+            <nav class="nav _modal">        
+                <a class="modal__link" href="#">Мероприятия</a>
+                <div class="line"></div>
+                <a class="modal__link" href="#">Расписание</a>
+                <div class="line"></div>
+                <a class="modal__link" href="#">О компании</a>         
+            </nav>
+            <button class="modal-close" onclick="closeModal()"></button>
+        </div>    
+    <script src="scripts/script.js"></script>
 </body>
 </html>
