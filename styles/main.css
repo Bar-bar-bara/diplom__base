@@ -3,6 +3,7 @@
     --accent-light: #FBF138;
     --accent-dark: #2B3541;
     --gray-back:#F3F3F3;
+    --tr:0.2s;
 }
 
 
@@ -198,6 +199,7 @@ a {
     background-position: center center;
     border-radius: 100%;
     bottom: 0 ;
+    transition: var(--tr);
 }
 
 /*Shedule*/
@@ -595,6 +597,19 @@ input {
     margin-left: 76px;
 }
 
+.footer__link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+
+}
+
+.footer__link:hover::after {
+    background-color: var(--accent-dark);
+}
+
 .footer__nav a {
     color: var(--accent-dark);
     font-size: 14px;
@@ -753,8 +768,7 @@ input {
     .modal__link {
         font-size: 16px;
         font-weight: 400;
-        color: var(--accent-dark);
-        
+        color: var(--accent-dark);  
 
     }
 
@@ -778,11 +792,32 @@ input {
         margin: 0 auto;
         box-sizing: border-box;
         z-index: 1;
+        transition: var(--tr);
         
+    }
+
+    .modal-close {
+        display: block;
+        width: 20px;
+        height: 19px;
+        background-image: url(../images/close.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
     
     .e-mail-header {
         margin-right: -7px;
+    }
+
+
+
+    .shedule__title {
+        font-size: clamp(24px, 5.1vw, 48px);
     }
    
     .shedule__box {
@@ -824,19 +859,7 @@ input {
         left: 10px;
     }
 
-    .modal-close {
-        display: block;
-        width: 20px;
-        height: 19px;
-        background-image: url(../images/close.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }  
+  
     
 
     .footer__nav {
@@ -853,7 +876,7 @@ input {
     .footer__container {
         display: flex;
         padding-left: 22px;
-        padding-right: 0px;        
+        padding-right: 22px;        
         align-items: center;
         justify-content: space-between;
         padding-bottom: 22px;
@@ -1004,6 +1027,7 @@ input {
 
     .hero__bg {
         flex-basis: 50%;
+        height: clamp(493px, 66vw, 852px);
     }
 
     .hero__img {
@@ -1019,13 +1043,23 @@ input {
         left: 65px;
     }
 
+    .subscription_title {
+        padding-top: 84px;
+    }
+
     .form {
         padding-left: 28px;
     }
 
     .subscription__content {
-        margin-bottom: 34px;
+        padding-left: 22px;
     }
+
+    .subscription {
+        margin-bottom: 98px;
+    }
+
+ 
 
     .about__text {
         width: 318px;
@@ -1268,127 +1302,17 @@ input {
         margin-bottom: 76px;
     }
 
+    .shedule__date {
+        margin-left: 362px;
+    }
+
     .form {
         flex-wrap: wrap;
         padding-left: 0px;
     }
     .subscription {
         margin-bottom: 95px;
-    }
-   /* .container{
-        padding-left: 22px;
-        padding-right: 12px;
-    }
-    .logo {
-        width: 78px;
-        height: 24px;
-    }
-    .header {
-        gap: 38px;        
-    }
-
-    .e-mail-header {
-        font-size: 14px;
-        margin-right: 0px;        
-    }
-   .hero__wrapper {
-        flex-direction: column;
-    }
-
-    .hero__bg {
-        display: none;
-    }
-    .hero__img {
-        display: none;
-    }
-    .arrow {
-        display: none;
-    }
-    .hero__text {
-        padding-top: 38px;
-        padding-bottom: 58px;
-    }
-
-    .hero_button {
-        width: 100%;
-        padding: 20px 0px;
-        text-align: center;
-        margin-top: 28px;
-    }
-
-    .shedule__header {
-        margin-top: 109px;
-        margin-bottom: 25px;
-    }
-
-    .shedule__title {
-        max-width: 209px;
-    }
-
-    .shedule__dates {
-        padding-bottom: 22px;
-    }
-
-    .shedule__box {        
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 114px);
-        grid-template-areas: "a" "d" "b" "e" "c" "f";
-        gap: 18px;
-        margin-bottom: 76px;
-    }
-
-    .shedule__thumb {        
-        bottom: 35px;
-        left: 11px;
-    }
-
-    .shedule__img {
-        width: 39px;
-        max-height: 50px;
-    }
-    
-    .shedule__name {
-        font-size: 14px;
-    }
-
-    .shedule__date {
-        font-size: 14px;
-        margin-top: 13px;
-        margin-left: 214px;       
-        margin-right: 0px;
-
-    }
-
-    .shedule__name {
-        
-        bottom: 10px;
-        left: 12px;
-    }*/
-   /* .form {
-        flex-wrap: wrap;
-        padding-left: 22px;
-    }
-    .subscription_title {
-        font-size: 26px;
-        line-height: 32px;
-        padding-top: 56px;
-        padding-bottom: 14px;
-    }
-    .subscription_title::before {
-        width: 31px;
-        height: 31px;
-        top: 44px;
-        left: 77px;
-    }
-    .agreement {
-        margin-bottom: 12px;
-    }
-
-    .button_submit {
-        flex-basis: 330px;
-        margin-bottom: 65px;
-    }*/
-
+    }   
     .about__wrapper {
         flex-wrap: wrap;
         margin-bottom: 19px;
@@ -1424,13 +1348,12 @@ input {
         margin-bottom: 12px;
     }
 
-   * .footer__container {
+    .footer__container {
         display: flex;
         padding-left: 22px;
         padding-right: 0px;
         gap: 77px;
         align-items: center;
-
     }
 
     .footer__logo {
@@ -1452,4 +1375,28 @@ input {
     }   
 }
 
+@media(max-width:360px) {
+    .container {
+        padding-left: 22px;
+        padding-right: 9px;
+    }  
+   
+    .shedule__date {
+        margin-left: 212px;
+    }
+
+    .subscription_title::before {
+        left: 48px;
+    }
+
+    .subscription__content {
+        padding-right: 0px;
+        padding-left: 14px;
+    }
+
+    .footer__container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 
