@@ -362,6 +362,7 @@ input {
     width: 372px;
     padding-top: 19px;
     padding-bottom: 19px;
+    padding-left: 10px;
     margin-bottom: 10px;   
 }
 
@@ -381,7 +382,6 @@ input {
     margin: 0 auto;
     display: flex;
     gap: 20px;
-    padding-left: 16px;
     
  }
  .form > div {
@@ -954,9 +954,6 @@ input {
     .shedule__header{
         margin-top: 69px;
     }
-    .form {
-        padding-left: 18px;
-    }
 
     .subscription__content {
         padding-left: 22px;
@@ -1110,7 +1107,6 @@ input {
     
     .form {
         flex-wrap: wrap;
-        padding-left: 22px;
         justify-content: center;
     }
     input {
